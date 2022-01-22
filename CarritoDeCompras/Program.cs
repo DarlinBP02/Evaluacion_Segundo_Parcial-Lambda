@@ -22,6 +22,7 @@ namespace CarritoDeCompras
             cliente.GuardarCliente("1316645892", "Rogelio Steven", "Vera Mero\t", 24, "rogelio@mail.com", " 163\t");
             Console.WriteLine(cliente.ListarUsuarios());
             Console.ReadLine();
+            Console.Clear();
 
             //GestionProductos producto = new GestionProductos();
             //Console.WriteLine(producto.ListarProductos());
@@ -31,21 +32,25 @@ namespace CarritoDeCompras
             Console.WriteLine("*Clientes Ordenados Alfabeticamente*");
             Console.WriteLine(cliente.ClientesOrdenados());
             Console.ReadLine();
+            Console.Clear();
             //2) Los clientes mayores de 18 años ordenados alfabeticamente de Z a A. (2 Puntos)
             Console.WriteLine("*Los Cliente mayores de 18 ordenados alfabeticamentes son*");
             // Console.WriteLine(cliente.MayoresClientes());
             Console.WriteLine(cliente.MayoresClientes());
             Console.ReadLine();
+            Console.Clear();
             //3) El cliente cuyo apellido sea un parametro ingresado por el usuario a traves del teclado. (2 Puntos)
             Console.WriteLine("*Cliente ingresado por el usuario*");
             Console.WriteLine("INGRESE LOS DOS APELLIDO DEL CLIENTE A BUSCAR: ");
             string buscar = Console.ReadLine();
-            Console.WriteLine(cliente.ClientesIngresados(buscar));
+            Console.WriteLine("Cliente que Ingreso segun el apellido: "+cliente.ClientesIngresados(buscar));
             Console.ReadLine();
+            Console.Clear();
             //4) El cliente de mayor edad. (2 Puntos)
             Console.WriteLine("*El Cliente con mayor Edad es*");
             Console.WriteLine(cliente.ClienteMayor());
             Console.ReadLine();
+            Console.Clear();
             //5) El promedio de edad de los clientes. (1 Puntos)
             Console.WriteLine("*El Promedio de edad de los Clientes es de*");
             Console.WriteLine("El Promedio total es: " + cliente.PromedioCliente());
